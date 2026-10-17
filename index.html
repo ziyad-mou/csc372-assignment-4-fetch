@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<!--
+  Name: Ziyad Moustafa
+  Date: 10.16.2026
+  CSC 372
+
+  Assignment 4: TVmaze Show Gallery.
+  This page allows users to search for TV shows
+  and displays matching results using the TVmaze API.
+-->
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TVmaze Show Gallery</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <header>
+        <h1>TVmaze Show Gallery</h1>
+        <p>Search for your favorite TV shows!</p>
+    </header>
+
+    <main>
+        <form id="search-form">
+            <label for="show-search">Search for a TV show:</label>
+            <input
+                type="text"
+                id="show-search"
+                placeholder="Enter a show name"
+                value="friends"
+            >
+            <button type="submit">Search</button>
+        </form>
+
+        <p id="status-message" role="status"></p>
+
+        <section id="show-gallery" aria-label="TV show results">
+        </section>
+    </main>
+
+    <footer>
+        <p>
+            Show data provided by
+            <a href="https://www.tvmaze.com/" target="_blank" rel="noopener noreferrer">
+                TVmaze
+            </a>
+        </p>
+    </footer>
+
+</body>
+</html>
