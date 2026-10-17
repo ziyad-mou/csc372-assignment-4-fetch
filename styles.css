@@ -1,0 +1,141 @@
+
+/*
+  Name: Ziyad Moustafa
+  Date: 10.16.2026
+  CSC 372
+
+  Styles for the TVmaze Show Gallery.
+  Includes a responsive Flexbox card layout.
+*/
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    color: #222;
+    line-height: 1.5;
+}
+
+header {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+}
+
+h1 {
+    margin: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 20px;
+    min-height: 60vh;
+}
+
+form {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+
+input {
+    flex: 1 1 250px;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button {
+    padding: 12px 24px;
+    background-color: #243b55;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #365b80;
+}
+
+footer {
+    background-color: #243b55;
+    color: white;
+    text-align: center;
+    padding: 15px;
+}
+
+footer a {
+    color: #c8e6ff;
+}
+
+/* TV show cards */
+
+.show-card {
+    flex: 1 1 280px;
+    max-width: 360px;
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 3px 8px rgba(0, 0, 0, 0.1);
+}
+
+.show-card h2 {
+    margin-top: 0;
+    color: #243b55;
+}
+
+.show-poster {
+    width: 100%;
+    height: 250px;
+    object-fit: contain;
+}
+
+.show-summary {
+    margin: 15px 0;
+}
+
+.show-info {
+    margin: 8px 0;
+}
+
+.cast-list {
+    padding-left: 20px;
+}
+
+.show-link {
+    display: inline-block;
+    margin-top: 15px;
+    color: #175a9c;
+    font-weight: bold;
+}
+
+/* Status messages */
+
+#status-message {
+    margin: 20px 0;
+    font-weight: bold;
+}
+
+/* Responsive Flexbox gallery */
+
+#show-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
